@@ -51,4 +51,13 @@ nav {
   bottom: 0;
   width: 100%; }
 
+.cameraSlide {
+  background-color: #2d2d2d; }
+
+.camera_thumbs_cont {
+  background-color: #2d2d2d !important; }
+
+.camera_bar_cont {
+  background-color: #424242 !important; }
+
 /*# sourceMappingURL=main.css.map */
