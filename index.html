@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyWebsite" class="no-js">
+  <head>
+    <script src="supportJS/jquery/jquery.js"></script>
+    <script src="supportJS/angular/angular.js"></script>
+    <script src="supportJS/angular-route/angular-route.js"></script>
+    <script src="supportJS/angular-resource/angular-resource.js"></script>
+    
+    
+    <script type='text/javascript' src='supportJS/camera/jquery.easing.1.3.js'></script>
+    <script type='text/javascript' src="supportJS/camera/camera.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="_CSS/main.css" />
+    <link rel="stylesheet" type="text/css" href="_CSS/camera.css" />
+    
+    <script src="app.js"></script>
+    
+    <script src="partials/homeController.js"></script>
+    
+    
+    <script src="partials/photosController.js"></script>
+    
+    <script src="partials/refereeController.js"></script>
+    <script src="partials/volunteerController.js"></script>
+  </head>
+  <body>
+      <div ng-view></div>
+  </body>
+</html>

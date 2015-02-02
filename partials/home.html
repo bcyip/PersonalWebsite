@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<div class="homePageContainer">
+  <img class="bgimage" src="images/homeImage.jpg"/>
+  <div class="backgroundimage">
+  </div>
+  
+  <div class="headercolor">
+    <nav>
+      <ul>
+        <li ng-repeat="(id, list) in homeList" ng-click="listClick(id)">
+          <a href="">{{list.name}}</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  
+</div>
