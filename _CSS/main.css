@@ -1,15 +1,31 @@
 body {
-  margin: 0; }
+  margin: 0;
+  background-color: #2d2d2d; }
 
-.bgimage {
-  position: absolute;
-  min-height: 100%;
-  min-width: 1024px;
-  width: 100%;
-  height: auto;
+.bg_container {
   position: fixed;
-  top: 0;
-  left: 0; }
+  top: 0px;
+  left: -20%;
+  width: 120%;
+  height: 120%; }
+  .bg_container .bgimage {
+    /*position: absolute;
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    min-width: 50%;
+    min-height: 50%;
+    max-width: 100%; }
 
 @media screen and (max-width: 1024px) {
   /* Specific to this particular image */
@@ -27,7 +43,8 @@ body {
   margin: 10px 0px 0px 0px;
   width: 100%;
   height: 50px;
-  background-color: rgba(0, 0, 0, 0.4); }
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1; }
 
 nav {
   position: absolute; }
@@ -48,8 +65,17 @@ nav {
 .my_camera_container {
   position: absolute;
   display: flex;
-  bottom: 0;
-  width: 100%; }
+  width: 100%;
+  height: 100%; }
+
+.camera_wrap {
+  width: 100%;
+  top: 65px;
+  width: 100% !important;
+  margin-bottom: 0px !important; }
+  .camera_wrap > div:nth-child(2) {
+    position: relative;
+    margin-bottom: 20px; }
 
 .cameraSlide {
   background-color: #2d2d2d; }

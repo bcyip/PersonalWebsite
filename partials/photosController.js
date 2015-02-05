@@ -27,7 +27,7 @@ MyApp.controller('PhotosCntrl',function($scope, $route, $routeParams, $location,
     }],
     $scope.$on('$routeChangeSuccess', function() {
       $('#camera_wrap_2').camera({
-          height: '600px',
+          /*height: '500px',*/
           loader: 'bar',
           fx: 'random',
           overlayer: true,

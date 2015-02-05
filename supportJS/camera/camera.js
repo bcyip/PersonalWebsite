@@ -721,9 +721,9 @@
 			$(commands,wrap).animate({opacity:0},0);
 			if(isMobile()){
 				fakeHover.on('vmouseover',function(){
-					$(prevNav,wrap).animate({opacity:1},200);
-					$(nextNav,wrap).animate({opacity:1},200);
-					$(commands,wrap).animate({opacity:1},200);
+					$(prevNav,wrap).animate({opacity:0.4},200);
+					$(nextNav,wrap).animate({opacity:0.4},200);
+					$(commands,wrap).animate({opacity:0.4},200);
 				});
 				fakeHover.on('vmouseout',function(){
 					$(prevNav,wrap).delay(500).animate({opacity:0},200);
@@ -732,9 +732,9 @@
 				});
 			} else {
 				fakeHover.hover(function(){
-					$(prevNav,wrap).animate({opacity:1},200);
-					$(nextNav,wrap).animate({opacity:1},200);
-					$(commands,wrap).animate({opacity:1},200);
+					$(prevNav,wrap).animate({opacity:0.4},200);
+					$(nextNav,wrap).animate({opacity:0.4},200);
+					$(commands,wrap).animate({opacity:0.4},200);
 				},function(){
 					$(prevNav,wrap).animate({opacity:0},200);
 					$(nextNav,wrap).animate({opacity:0},200);
