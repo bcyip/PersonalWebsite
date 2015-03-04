@@ -1,41 +1,89 @@
-/*
-Error: Invalid CSS after "  }": expected selector or at-rule, was "}*\/"
-        on line 39 of _SCSS/main.scss
+body {
+  margin: 0;
+  background-color: #2d2d2d; }
 
-34: /*@media screen and (max-width: 1024px) { /* Specific to this particular image *\/
-35:   img.bgimage {
-36:     left: 50%;
-37:     margin-left: -512px;
-38:   }
-39: }*\/
-40: .backgroundimage{
-41:   background-image: url("../images/transparent.gif");
-42:   position: absolute;
-43:   height: 100%;
-44:   width: 100%;
+.bg_container {
+  position: fixed;
+  top: 0px;
+  left: -20%;
+  width: 120%;
+  height: 120%; }
+  .bg_container .bgimage {
+    /*position: absolute;
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;*/
+    position: absolute;
+    top: -20%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    min-width: 50%;
+    min-height: 50%;
+    max-width: 100%; }
 
-Backtrace:
-_SCSS/main.scss:39
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/lib/sass/scss/parser.rb:1165:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/lib/sass/scss/parser.rb:1101:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/lib/sass/scss/parser.rb:43:in `parse'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/lib/sass/engine.rb:393:in `_to_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/lib/sass/engine.rb:368:in `_render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/lib/sass/engine.rb:285:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/lib/sass/plugin/compiler.rb:328:in `block in watch'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/vendor/listen/lib/listen/listener.rb:252:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"  }\": expected selector or at-rule, was \"}*/\"\A         on line 39 of _SCSS/main.scss\A \A 34: /*@media screen and (max-width: 1024px) { /* Specific to this particular image */\A 35:   img.bgimage {\A 36:     left: 50%;\A 37:     margin-left: -512px;\A 38:   }\A 39: }*/\A 40: .backgroundimage{\A 41:   background-image: url(\"../images/transparent.gif\");\A 42:   position: absolute;\A 43:   height: 100%;\A 44:   width: 100%;"; }
+@media screen and (max-width: 1024px) {
+  /* Specific to this particular image */
+  img.bgimage {
+    left: 50%;
+    margin-left: -512px; } }
+.backgroundimage {
+  background-image: url("../images/transparent.gif");
+  position: absolute;
+  height: 100%;
+  width: 100%; }
+
+.headercolor {
+  position: absolute;
+  margin: 10px 0px 0px 0px;
+  width: 100%;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1; }
+
+nav {
+  position: absolute; }
+  nav ul li {
+    list-style-type: none;
+    float: left;
+    width: 100px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    color: white; }
+    nav ul li a:link, nav ul li a:hover, nav ul li a:active, nav ul li a:visited {
+      color: white;
+      text-decoration: none; }
+
+.photo_content_container {
+  position: relative; }
+
+.my_camera_container {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%; }
+
+.camera_wrap {
+  width: 100%;
+  top: 65px;
+  width: 100% !important;
+  margin-bottom: 0px !important; }
+  .camera_wrap > div:nth-child(2) {
+    position: relative;
+    margin-bottom: 20px; }
+
+.cameraSlide {
+  background-color: #2d2d2d; }
+
+.camera_thumbs_cont {
+  background-color: #2d2d2d !important; }
+
+.camera_bar_cont {
+  background-color: #424242 !important; }
+
+/*# sourceMappingURL=main.css.map */
